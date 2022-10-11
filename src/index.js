@@ -1,12 +1,13 @@
 import { createRoot } from "react-dom/client";
 
-//createRoot(document.getElementById("root")).render(
-//or
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const root = createRoot(document.getElementById("root"));
 root.render(
   <div>
-    <h1>Hello</h1>
-    <p> Tis is a pharagraph</p>
+    <h1>My favourite foods</h1>
+    <ul>
+      <li>Pasta</li>
+      <li>Pizza</li>
+      <li>Soup</li>
+    </ul>
   </div>
 );
