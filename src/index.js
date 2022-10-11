@@ -4,10 +4,14 @@ import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
 
+const img = "https://picsum.photos/200";
+
 root.render(
   <div>
     <h1 className="heading">My favourite foods</h1>
     <div>
+      <img src={img} alt="img" />
+      <br />
       <img
         className="food-img"
         src="https://assets.bonappetit.com/photos/5b9a901947aaaf7cd9ea90f2/3:4/w_1998,h_2665,c_limit/ba-recipe-pasta-al-limone.jpg"
