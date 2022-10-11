@@ -1,13 +1,13 @@
 import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
+
+const name = "Tina Lacatis";
+const year = new Date().getFullYear();
+
 root.render(
   <div>
-    <h1>My favourite foods</h1>
-    <ul>
-      <li>Pasta</li>
-      <li>Pizza</li>
-      <li>Soup</li>
-    </ul>
+    <p> Created by {name} </p>
+    <p> Copyright {year} </p>
   </div>
 );
