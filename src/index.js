@@ -1,24 +1,29 @@
 import "./style.css";
-
 import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
 
-const customStyle = {
-  color: "blue",
-  fontSize: "30px",
-  border: "1px solid black",
-};
-customStyle.color = "purple";
+const hour = new Date().getHours();
 
-const img = "https://picsum.photos/200";
+let greeting;
+
+const customStyle = {
+  color: "",
+};
+
+if (hour < 12) {
+  greeting = "Good Morning";
+  customStyle.color = "red";
+} else if (hour < 18) {
+  greeting = "Good Afternoon";
+  customStyle.color = "green";
+} else {
+  greeting = "Good Evening";
+  customStyle.color = "blue";
+}
+
 root.render(
-  <div>
-    <h1 style={customStyle} className="heading">
-      My favourite foods
-    </h1>
-    <div>
-      <img src={img + "?grayscale"} alt="img" />
-    </div>
-  </div>
+  <h1 className="heading" style={customStyle}>
+    {greeting}
+  </h1>
 );
