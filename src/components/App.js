@@ -1,11 +1,5 @@
 import Heading from "./Heading";
-import List from "./List";
 
 export default function App() {
-  return (
-    <div>
-      <Heading />
-      <List />
-    </div>
-  );
+  return <Heading />;
 }
