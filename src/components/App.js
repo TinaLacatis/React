@@ -1,14 +1,11 @@
-import { StrictMode } from "react";
 import Heading from "./Heading";
 import List from "./List";
 
 export default function App() {
   return (
     <div>
-      <StrictMode>
-        <Heading />
-        <List />
-      </StrictMode>
+      <Heading />
+      <List />
     </div>
   );
 }
